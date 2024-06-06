@@ -1,0 +1,122 @@
+#################################
+## Introduction and background ##
+#################################
+
+#################################
+## Upload CVS files to R ##
+#################################
+
+#https://www.kaggle.com/arashnic/fitbit
+
+##########################################################
+## Installing and loading common packages and libraries ##
+##########################################################
+
+install.packages('tidyverse')
+library(tidyverse)
+
+
+(View(dailyActivity_merged))
+
+daily_activity <- read.cvs(dailyActivity_merged.cvs)
+daily_activity <- read.csv("dailyActivity_merged.csv")
+
+install.packages("dailyActivity_merged.csv")
+
+daily_activity <- read.csv("dailyActivity_merged.csv")
+
+save.image("~/Bellabeat_fitbit.RData")
+> View(dailyActivity_merged)
+> View(hourlyIntensities_merged)
+> load("~/Bellabeat_fitbit.RData")
+
+daily_activity <- read.csv("dailyActivity_merged.csv")
+
+#################################
+## Introduction and background ##
+#################################
+
+###########################
+## Upload your CSV files to R ##
+###########################
+
+#https://www.kaggle.com/arashnic/fitbit
+https://www.kaggle.com/arashnic/fitbit
+
+https://www.kaggle.com/arashnic/fitbit
+
+################################################
+## Installing and loading common packages and libraries ##
+################################################
+
+list.files("dailyCalories_merged","dailyCalories_merged")
+
+csv_list <- list.files("path_to_folder", include.dirs = FALSE, recursive = TRUE, pattern = "*.csv")
+
+#https://www.kaggle.com/arashnic/fitbit
+
+daily_activity <-read.csv("dailyActivity_merged.cvs")
+setwd("/path/to/your/directory")
+
+data <- read.csv("dailyCalories_merged.csv")
+
+getwd("dailyCalories_merged.csv")
+
+setwd("path/to/directory")
+data <- read.csv("data/dailyCalories_merged.csv")
+daily_activity <- read.csv("dailyActivity_merged.csv")
+
+“/Users/emilyridley-zecos/Downloads/dailyCalories_merged.csv"
+dailyCalories_merged <-read.csv("dailyCalories_merged.csv")
+dailyCalories_merged <-read.csv("dailyCalories_merged.cvs")
+
+current_directory <- getwd()
+print(current_directory)
+
+print(dailyCalories_merged)
+
+list.files()
+setwd("/Users/emilyridley-zecos/Desktop/")
+
+print(data)
+
+daily_activity <- read.csv("dailyActivity_merged.csv")
+sleep_day <- read.csv("sleepDay_merged.csv")
+head(daily_activity)
+colnames(daily_activity)
+head(sleep_day)
+colnames(sleep_day)
+merged_df <- merge(dailyCalories_merged, dailyActivity_merged, by = "Id")
+head(merged_df)
+n_distinct(daily_activity$Id)
+n_distinct(daily_activity$Id)
+n_distinct(sleep_day$Id)
+nrow(daily_activity)
+nrow(sleep_day)
+
+daily_activity %>%
+select(TotalSteps,
+TotalDistance,
+SedentaryMinutes) %>%
+summary()
+
+sleep_day %>%
+select(TotalSleepRecords,
+TotalMinutesAsleep,
+TotalTimeInBed) %>%
+summary()
+ggplot(data=daily_activity, aes(x=TotalSteps, y=SedentaryMinutes)) + geom_point()
+ggplot(data=sleep_day, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) + geom_point()
+
+combined_data <- merge(sleep_day, daily_activity, by="Id")
+n_distinct(combined_data$Id)
+n_distinct(combined_data$Id)
+
+merge(x = sleep_day, y = daily_activity, by = "Id", all = TRUE)
+
+left_mleft_merged_df <- merge(sleep_day, daily_activity, by = "Id", all.x = TRUE)
+left_merged_df <- merge(sleep_day, daily_activity, by = "Id", all.x = TRUE)
+left_merged_df <- merge(sleep_day, daily_activity, by = c("Id", "Date"), all.x = TRUE)
+left_merged_df <- merge(sleep_day, daily_activity, by = "Id", all.x = TRUE)
+left_merged_df <- merge(sleep_day, daily_activity, by = "Id", all.x = TRUE)
+getwd()
